@@ -1,30 +1,49 @@
 :root {
-  --color-rojo: #a83338;
-  --color-rojo-claro: #d02d37;
-  --color-texto-SIMAN: #feedee;
-  --color-acento: #007bff;
-  --borde-radio: 8px;
+  --color-rojo: #a83338;; /* Rojo SIMAN */
+  --color-rojo-claro: #d02d37; /* Rojo claro SIMAN */
+  --color-texto-SIMAN: #feedee; /* Texto SIMAN */
+  --color-buttons: #383838; /* Botones */
+  --color-fondo: #e2e2e2; /* Fondo */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-SIMAN);
   margin: 0;
 }
 
+header {
+  background-color: var(--color-rojo);
+}
+
+.banner{
+  background-image: url('https://unkempt.com/wp-content/uploads/2023/08/instagram-gradient.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contenido h1{
+  font-size: 3rem;
+  color: var(--color-texto-SIMAN);
+}
+
+.contenido p{
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: var(--color-texto-SIMAN);
+}
+
 .card-siman {
-  width: 250px;
-  border-radius: var(--borde-radio);
+  width: 270px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .img-card {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: var(--borde-radio);
-  border-top-right-radius: var(--borde-radio);
+    max-height: 250px;
 }
 
 .card-body {
@@ -44,10 +63,17 @@ body {
   }
 
   .img-card {
-    height: 180px;
+    height: 400px;
   }
 
   h2 {
     font-size: 1.5rem;
   }
+}
+
+.footer-style {
+  background-color: var(--color-rojo);
+  color: var(--color-texto-SIMAN);
+  padding: 20px;
+  text-align: center;
 }
