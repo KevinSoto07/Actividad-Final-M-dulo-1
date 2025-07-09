@@ -1,0 +1,60 @@
+:root {
+  --color-rojo: #a83338;
+  --color-rojo-claro: #d02d37;
+  --color-texto-SIMAN: #feedee;
+  --color-buttons: #383838;
+  --color-fondo: #e2e2e2;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: var(--color-rojo);
+}
+
+
+.formulario-suscripcion {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+}
+
+.text-form {
+  color: var(--color-rojo-claro);
+}
+
+.btn-dark {
+  background-color: var(--color-buttons);
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+}
+
+input.form-control {
+  border-radius: 0.5rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .formulario-suscripcion {
+    padding: 2rem 1rem;
+  }
+}
+
+.footer-style {
+  background-color: var(--color-rojo);
+  color: var(--color-texto-SIMAN);
+  padding: 20px;
+  text-align: center;
+}
